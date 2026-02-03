@@ -211,6 +211,17 @@ docker build -t file-storage .
 docker run -p 8091:8091 --env-file .env file-storage
 ```
 
+## TODO
+
+Planned features and improvements:
+
+- [ ] **User Management** - User registration, profiles, and account management
+- [ ] **Authentication & Authorization** - User authentication system with JWT tokens
+- [ ] **Image Thumbnails** - Automatic thumbnail generation for uploaded images
+- [ ] **Swagger Documentation** - OpenAPI/Swagger UI for API documentation
+- [ ] **Redis Integration** - Caching layer and session management with Redis
+- [ ] **Material UI** - Integrate Material UI component library for modern UI design
+
 ## License
 
 MIT
