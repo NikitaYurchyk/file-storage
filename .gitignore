@@ -1,0 +1,13 @@
+# Environment
+.env
+.env.*
+!.env.example
+
+# Database
+*.db
+data/
+
+# Binary
+server
+
+

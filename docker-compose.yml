@@ -1,0 +1,15 @@
+services:
+  api:
+    build: .
+    ports:
+      - "${PORT:-8091}:${PORT:-8091}"
+    env_file:
+      - .env
+    environment:
+      - DB_PATH=/app/data/app.db
+    volumes:
+      - db_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  db_data:
