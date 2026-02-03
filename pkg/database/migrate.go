@@ -7,6 +7,7 @@ import (
 	"github.com/pressly/goose/v3"
 )
 
+//go:embed migrations/*.sql
 var embedMigrations embed.FS
 
 func RunMigrations(db *sql.DB) error {
